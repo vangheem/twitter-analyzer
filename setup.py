@@ -8,7 +8,7 @@ changelog = open('CHANGELOG.rst').read()
 
 setup(
     name='twitter-analyzer',
-    version='1.0.0',
+    version='1.0.1.dev0',
     description='Analyze your twitter account',
     long_description=long_description + changelog,
     keywords=['asyncio', 'twitter', 'sqlite'],
