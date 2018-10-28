@@ -9,6 +9,7 @@ and timeline.
 
 
 Requires: Python 3.5+
+Twitter API consumer/access tokens and secrets
 
 
 Installation
