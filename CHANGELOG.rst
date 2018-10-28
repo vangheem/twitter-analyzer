@@ -2,7 +2,7 @@
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Better troll output
 
 
 1.0.0 (2018-10-27)

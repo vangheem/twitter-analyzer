@@ -268,12 +268,21 @@ order by avg(tweets.subjectivity)'''.format(me['id'], subjectivity))).fetchall()
         else:
             trolls[tweet.user_id]['subjectivity'] = tweet.subjectivity
 
-    for troll_id, data in trolls.items():
-        if 'subjectivity' not in data:
+    for troll_id in list(trolls.keys()):
+        if 'subjectivity' not in trolls[troll_id]:
             # only if the 2 intersect
-            continue
+            del trolls[troll_id]
 
-        print('|@{screen_name} - polarity: {polarity} - subjectivity: {subjectivity}'.format(**data))
+    if len(trolls) == 0:
+        print('No trolls found!')
+    else:
+        print('|---')
+        print('|{} trolls found!'.format(len(trolls)))
+        for troll_id, data in trolls.items():
+            print('|---')
+            print('''| @{screen_name}
+| polarity: {polarity:.2}
+| subjectivity: {subjectivity:.2}'''.format(**data))
 
 
 if __name__ == '__main__':
