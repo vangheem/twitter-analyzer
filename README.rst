@@ -41,5 +41,11 @@ Find trolls:
 Search
 
     tanalyze search github
+
+Search urls
+
     tanalyze search github --url
+
+Search users
+
     tanalyze search vangheezy --user
