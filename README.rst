@@ -1,0 +1,44 @@
+Twitter Analyzer
+================
+
+Did you ever want to be able to analyze your twitter account for things
+you've liked or people who have trolled you? This is the tool for you.
+
+Twitter does not provide any mechanism to search in depth your tweets
+and timeline.
+
+
+Requires: Python 3.5+
+
+
+Installation
+------------
+
+With pip:
+
+    pip install twitter-analyzer
+
+
+Usage
+-----
+
+Initialize:
+
+    tanalyze init
+
+
+Update:
+
+    tanalyze update
+
+
+Find trolls:
+
+    tanalyze find-trolls
+
+
+Search
+
+    tanalyze search github
+    tanalyze search github --url
+    tanalyze search vangheezy --user
